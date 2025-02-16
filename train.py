@@ -108,7 +108,7 @@ def main(args):
         # Compute all metrics etc.
 
         train_pred, test_pred = np.concatenate(train_pred, axis = 0), np.concatenate(test_pred, axis = 0)
-        train_label, test_label = np.concatenate(train_label, axis = 0), np.concatenate(test_label, axis = 1\0)
+        train_label, test_label = np.concatenate(train_label, axis = 0), np.concatenate(test_label, axis = 1)
         
         epoch_accuracy = accuracy_score(np.argmax(train_label, axis = 1), np.argmax(train_pred, axis = 1))
         epoch_test_accuracy = accuracy_score(np.argmax(test_label, axis = 1), np.argmax(test_pred, axis = 1))
